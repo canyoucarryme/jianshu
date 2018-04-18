@@ -6,15 +6,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import Bootstrap from 'bootstrap-vue'
-Vue.use(Bootstrap)
-// 首先引入bootstrap.css文件,加载bootstrap样式
-import 'bootstrap/dist/css/bootstrap.css'
-// 引入bootstrap-vue.css文件
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-export default {
-  
-}
+
 </script>
 
