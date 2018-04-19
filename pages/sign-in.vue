@@ -24,31 +24,33 @@
             <div class="js-form">
                 <form method="post">
                     <div class="input-prepend">
-                        <input type="text" class="input-prepend" placeholder="手机号或邮箱">
+                        <input type="text"  placeholder="手机号或邮箱">
                         <i class="fa fa-user"></i>
                     </div>
-                    <div class="input-prepend">
-                        <input type="text" class="input-prepend" placeholder="密码">
+                    <div class="input-prepend input-password">
+                        <input type="text"  placeholder="密码">
                         <i class="fa fa-lock"></i>
                     </div>
                     <div class="remember">
                         <input type="checkbox">
                     <span>记住我</span>
                     </div>
-                    
-                    <nuxt-link class="help" to="/">
+                    <div class="help">
+                        <nuxt-link  to="/">
                         登录遇到问题？
                     </nuxt-link>
-                    <button class="btn btn-primary">登录</button>
+                    </div>
+                    
+                    <button class="sign-in-btn">登录</button>
                 </form>
 
             </div>
             <!-- 第三方登录 -->
             <div class="more-sign">
-                <p class="">
+                <p>
                     社交账号登录
                 </p>
-                <ul class="">
+                <ul>
                     <li>
                         <nuxt-link to="/">
                             <i class="weixin fa fa-weixin"></i>
@@ -92,7 +94,4 @@
     }
 </script>
 
-<style scoped>
-    
-</style>
 
