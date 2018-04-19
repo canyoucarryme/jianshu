@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="sign-template">
     <nuxt/>
     
   </div>
@@ -19,6 +19,13 @@
     height: 100%;
     font-size: 14px;
     text-align: center;
+    min-height: 750px;
+  }
+  .sign::before{
+    content: '';
+    display: inline-block;
+    height: 85%;
+    vertical-align: middle;
   }
   .sign .logo{
     position: absolute;
@@ -30,7 +37,7 @@
   }
   .sign .main{
     width: 400px;
-    margin: 60px auto 0;
+    margin: 50px auto 0;
     padding: 50px 50px 30px;
     background: #fff;
     border-radius: 4px;
@@ -117,6 +124,74 @@
   }
   .sign .main form button:hover{
     background-color: #187cb7;
+    cursor: pointer;
+  }
+  .sign .main .more-sign p{
+    position: relative;
+    font-size: 14px;
+    color: #b8b8b8;
+    margin-bottom: 20px;
+  }
+  .sign .main .more-sign  p::before{
+    content: '';
+    width: 60px;
+    border-bottom: 1px solid #b8b8b8;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+   .sign .main .more-sign  p::after{
+    content: '';
+    width: 60px;
+    border-bottom: 1px solid #b8b8b8;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+   }
+   .sign .main .more-sign ul{
+     margin-bottom: 10px;
+   }
+   .sign .main .more-sign ul li{
+     display: inline-block;
+     color: white;
+     margin: 0 5px;
+     border-radius: 50%;
+   }
+   .sign .main .more-sign ul li a{
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     display: block;
+   }
+   .sign .main .more-sign ul li a i{
+     font-size: 24px;
+     text-align: center;
+     line-height: 50px;
+   }
+   .sign .main .more-sign ul li a i.weibo{
+     color: #e05244;
+   }
+   .sign .main .more-sign ul li a i.weixin{
+     color: #00bb29;
+   }
+   .sign .main .more-sign ul li a i.qq{
+     color: #498ad5;
+   }
+  @media screen and (max-width:768px){
+    .sign .logo{
+      display: none;
+    }
+    .sign .main{
+      margin: 0 auto ;
+      box-shadow: none;
+      
+    }
+    .sign{
+      background-color: white;
+    }
+    .sign::before{
+      height: 0;
+    }
   }
 </style>
 
