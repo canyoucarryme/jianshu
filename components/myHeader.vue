@@ -55,7 +55,8 @@
                   <!-- 右上角，注册登录 -->
                   <!-- 导航部分 -->
                     <div class="container" >
-                        <button class="navbar-toggle" @click="navShow=!navShow">
+                        <div class="row">
+                            <button class="navbar-toggle" @click="navShow=!navShow">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -117,6 +118,7 @@
                             </li>
                         </ul>
                         </transition>
+                        </div>
                     </div>
           </div>
       </nav>
@@ -222,10 +224,11 @@
         left: 0;
         box-shadow: 0 0 8px rgba(0, 0, 0, .1);
         min-width: 160px;
-        z-index: 999;
+        z-index: 999 ;
         margin: 0;
         padding: 10px 0;
         font-size: 15px;
+        background-color: white;
     }
     nav .user .drop-menu li a{
         padding: 10px 20px;

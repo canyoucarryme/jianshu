@@ -1,0 +1,56 @@
+/* *************************首页布局开始***************************** */
+.index .main{
+    padding-top: 30px;
+    padding-right: 0;
+}
+.index .aside{
+    padding-top: 30px;
+}
+.index .main .recommend-collection{
+    margin-bottom: 20px;
+}
+.index .main .recommend-collection a.collection{
+    display: inline-block;
+    margin: 0 18px 18px 0;
+    border:1px solid #dcdcdc;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    height: 34px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.index .main .recommend-collection a img{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.index .main .recommend-collection a span{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14px;
+    /* 设置一个最大宽度 */
+    max-width: 150px;
+    vertical-align: middle;
+    /* 超出后隐藏 */
+    overflow: hidden;
+    /* 不换行 */
+    white-space: nowrap;
+    /* 显示省略号 */
+    text-overflow: ellipsis;
+}
+
+.index .main .recommend-collection a.more-collection{
+    
+    display: inline-block;
+    font-size: 14px;
+    color: #787878;
+}
+
+.index .main .splite-line{
+    margin-top: -5px;
+    margin-bottom: 15px;
+    border-top: 1px solid #f0f0f0;
+}
