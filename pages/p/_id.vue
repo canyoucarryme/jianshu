@@ -83,16 +83,16 @@
                         </div>
                     </div>
                     <div class="share">
-                        <a href="#" class="share-btn">
+                        <a href="javascript:void(0)" class="share-btn" v-tooltip="'分享到qq'">
                             <i class="fa fa-qq qq"></i>
                         </a>
-                        <a href="#" class="share-btn">
+                        <a href="javascript:void(0)" class="share-btn" v-tooltip="'分享到微博'">
                             <i class="fa fa-weibo weibo"></i>
                         </a>
-                        <a href="#" class="share-btn">
+                        <a href="javascript:void(0)" class="share-btn" v-tooltip="'分享到微信'">
                             <i class="fa fa-weixin weixin"></i>
                         </a>
-                        <a href="#" class="share-btn more-share">
+                        <a href="javascript:void(0)" class="share-btn more-share">
                             更多分享
                         </a>
                     </div>
