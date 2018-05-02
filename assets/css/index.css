@@ -460,3 +460,23 @@ i.qq {
     color:#9b9b9b;
 }
 
+.islike{
+        background:#EA6F5A!important;
+    }
+.islike a {
+        color:#fff!important;
+    }
+.islike .like-num {
+        border-left:1px solid #fff!important;
+    }
+.islike .like-btn:before {
+        animation:changeLike .6s steps(19) forwards;
+    }
+@keyframes changeLike {
+        0% {
+            background-position:left;
+        }
+        100% {
+           background-position:right;
+        }
+    }

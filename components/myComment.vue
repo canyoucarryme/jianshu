@@ -39,7 +39,7 @@
                 <div class="comment-wrap">
                     <p>支持一下，消灭零评论</p>
                     <div class="tool-group">
-                        <a href="#" class="like-btn">
+                        <a href="javascript:void(0)" class="like-btn" :class="{'iszan':iszan}" @click="iszan=!iszan">
                             <span>一人赞</span>
                         </a>
                         <a href="#" class="comment-btn">
@@ -217,6 +217,7 @@
                         user_id:3160769
                     }
                 ],
+                iszan:false,
             }
         }
     }
@@ -367,6 +368,12 @@
         color:#969696;
         position:relative;
     }
+    .comment-list .comment .comment-wrap .like-btn:hover span{
+      color:#333!important;
+    }
+    .comment-list .comment .comment-wrap .like-btn:hover:before {
+       background-position-x:-50px;
+    }
     .comment-list .comment .comment-wrap .like-btn:before {
         content:'';
         width:50px;
@@ -378,6 +385,17 @@
         background-repeat:no-repeat;
         background-position:left;
         background-size:1050px 50px;
+    }
+    .comment-list .comment .comment-wrap .iszan.like-btn:before {
+       animation: changeZan .6s 1 steps(19) forwards;
+    }
+    @keyframes changeZan {
+        0% {
+            background-position-x:-50px;
+        }
+        100% {
+            background-position:right;
+        }
     }
     .comment-list .comment .comment-wrap .like-btn span {
         font-size:14px;
