@@ -8,7 +8,9 @@
                     <a href="#" class="emoji">
                         <i class="fa fa-smile-o"></i>
                     </a>
-                    <div class="emoji-modal"></div>
+                    <div class="emoji-modal">
+                       
+                    </div>
                 </div>
                 <div class="hint">Ctrl+Enter发送</div>
                 <a href="#" class="btn-send">发送</a>
@@ -18,11 +20,14 @@
     </div>
 </template>
 <script>
+    import data from '../data/emoji-data.js'
     export default {
         name:"myForm",
         data () {
             return {
+                
             }
-        }
+        },
+        
     }
 </script>

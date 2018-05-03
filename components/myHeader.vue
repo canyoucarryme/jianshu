@@ -20,7 +20,7 @@
                       </div>
                       <ul class="drop-menu" v-show="isShow">
                           <li>
-                              <nuxt-link to="/">
+                              <nuxt-link to="/u/123/timeline">
                                 <i class="fa fa-home"></i>
                                 我的主页
                               </nuxt-link>
@@ -76,31 +76,31 @@
                                 </nuxt-link>
                             </li>
                             <li class="user" @mouseover="notifyShow=true" @mouseout="notifyShow=false">
-                                <nuxt-link to="/notify">
+                                <nuxt-link to="/notify/comments">
                                     <i class="fa fa-bell-o"></i>
                                     <span>消息</span>
                                 </nuxt-link>
                                 <ul class="drop-menu" v-show="notifyShow">
                                     <li>
-                                        <nuxt-link to="/">
+                                        <nuxt-link to="/notify/comments">
                                             <i class="fa fa-comment-o"></i>
                                             评论
                                         </nuxt-link>
                                     </li>
                                      <li>
-                                        <nuxt-link to="/">
+                                        <nuxt-link to="/notify/chats">
                                             <i class="fa fa-envelope-o"></i>
                                             简信
                                         </nuxt-link>
                                     </li>
                                      <li>
-                                        <nuxt-link to="/">
+                                        <nuxt-link to="/notify/likes">
                                             <i class="fa fa-heart-o"></i>
                                             喜欢和赞
                                         </nuxt-link>
                                     </li>
                                      <li>
-                                        <nuxt-link to="/">
+                                        <nuxt-link to="/notify/follows">
                                             <i class="fa fa-square-o"></i>
                                             关注
                                         </nuxt-link>
@@ -125,7 +125,7 @@
   </div>
 </template>
 <script>
-    export default{
+    export default {
         name:'myHeader',
         data (){
            return{
@@ -227,7 +227,7 @@
         z-index: 999 ;
         margin: 0;
         padding: 10px 0;
-        font-size: 15px;
+        font-size: 14px;
         background-color: white;
     }
     nav .user .drop-menu li a{
