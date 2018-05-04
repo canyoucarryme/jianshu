@@ -26,7 +26,7 @@
                               </nuxt-link>
                           </li>
                            <li>
-                              <nuxt-link to="/user/123/like">
+                              <nuxt-link to="/u/123/like">
                                 <i class="fa fa-heart"></i>
                                 喜欢的文章
                               </nuxt-link>

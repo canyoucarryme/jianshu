@@ -55,6 +55,9 @@ a{
     color: #333;
     cursor: pointer;   
 }
+img{
+    vertical-align: middle;
+}
 /* *******************************************首页样式************************************************** */
 .container{
     padding-left: 15px;

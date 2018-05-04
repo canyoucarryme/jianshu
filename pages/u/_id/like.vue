@@ -60,136 +60,57 @@
                     </div>
                 </div>
                 <!-- 主体内容 -->
-                <div id="outer-container">
                     <ul class="trigger-menu">
                         <li>
-                            <nuxt-link to="/u/123">
-                                <i class="fa fa-book"></i>
-                                文章
-                            </nuxt-link>
+                            <nuxt-link to="/u/123/like">关注的专题/文集/连载 3</nuxt-link>
                         </li>
                         <li class="active">
-                            <nuxt-link to="/u/123/timeline">
-                                <i class="fa fa-bell"></i>
-                                动态
-                            </nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/u/123">
-                                <i class="fa fa-comments"></i>
-                                最新评论
-                            </nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/u/123">
-                                <i class="fa fa-fire"></i>
-                                热门
-                            </nuxt-link>
+                            <nuxt-link to="/u/123/like">喜欢的文章 2</nuxt-link>
                         </li>
                     </ul>
+                   
                     <div id="list-container">
                         <!-- 动态列表模块 -->
                         <ul class="note-list">
-                            <!-- 关注了作者 -->
-                            <li id="feed-123">
+                           <li class="have-img">
+                                <nuxt-link to="/p/123" class="wrap-img">
+                                    <img src="~/assets/img/note.png">
+                                </nuxt-link>
                                 <div class="content">
                                     <div class="author">
-                                        <nuxt-link class="avatar" to="/u/123">
+                                        <nuxt-link to="/p/123" class="avatar">
                                             <img src="~/assets/img/default-avatar.jpg">
                                         </nuxt-link>
                                         <div class="info">
-                                            <nuxt-link class="nickname" to="/u/123">测试用户</nuxt-link>
-                                            <span>关注了作者 · 05.2 17:15</span>
+                                            <nuxt-link to="/u/123" class="nickname">测试用户</nuxt-link>
+                                            <span class="time">
+                                                04.12 10:18
+                                            </span>
                                         </div>
                                     </div>
-                                    <div class="follow-detail">
-                                        <div class="info">
-                                            <nuxt-link class="avatar" to="/u/234">
-                                                <img src="~/assets/img/follower.jpg">
-                                            </nuxt-link>
-                                            <a class="btn btn-default following">
-                                                <i class="fa fa-check"></i>
-                                                <span>已关注</span>
-                                            </a>
-                                            <nuxt-link class="title" to="/u/234">
-                                                万里流水
-                                            </nuxt-link>
-                                            <p>写了 2437 字，被 22 人关注，获得了 117 个喜欢</p>
-                                        </div>
-                                        <div class="signature">
-                                            简介：
-张赞杰，笔名老牛，万里流水，广东省梅州市大埔县人，现在在广州东华职业学院就读物流管理，自小体弱多病，但是钟爱于写作，初中时学会写诗填词，至今已经作了大约有五百多首诗词。
-                                        </div>
+                                    <nuxt-link class="title" to="/p/123">佛系程序员的月薪五万指南</nuxt-link>
+                                    <div class="abstruct">
+                                        摘要：大师：很简单，我这里有一份佛系月薪 5 万指南，我看你骨骼清奇、脑门光亮，一看就是将要大富大贵之人，这份指南可以助你快速实现小目标！ 程序员问大师…… 青年：大师，你看...
                                     </div>
-                                </div>
-                            </li>
-                            <li id="feed-123">
-                                <div class="content">
-                                    <div class="author">
-                                        <nuxt-link class="avatar" to="/u/123">
-                                            <img src="~/assets/img/default-avatar.jpg">
+                                    <div class="meta">
+                                        <nuxt-link to="/p/123">
+                                            <i class="fa fa-eye"></i>
+                                            1500
                                         </nuxt-link>
-                                        <div class="info">
-                                            <nuxt-link class="nickname" to="/u/123">测试用户</nuxt-link>
-                                            <span>关注了作者 · 05.2 17:15</span>
-                                        </div>
-                                    </div>
-                                    <div class="follow-detail">
-                                        <div class="info">
-                                            <nuxt-link class="avatar" to="/u/234">
-                                                <img src="~/assets/img/follower.jpg">
-                                            </nuxt-link>
-                                            <a class="btn btn-default following">
-                                                <i class="fa fa-check"></i>
-                                                <span>已关注</span>
-                                            </a>
-                                            <nuxt-link class="title" to="/u/234">
-                                                万里流水
-                                            </nuxt-link>
-                                            <p>写了 2437 字，被 22 人关注，获得了 117 个喜欢</p>
-                                        </div>
-                                        <div class="signature">
-                                            简介：
-张赞杰，笔名老牛，万里流水，广东省梅州市大埔县人，现在在广州东华职业学院就读物流管理，自小体弱多病，但是钟爱于写作，初中时学会写诗填词，至今已经作了大约有五百多首诗词。
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li id="feed-123">
-                                <div class="content">
-                                    <div class="author">
-                                        <nuxt-link class="avatar" to="/u/123">
-                                            <img src="~/assets/img/default-avatar.jpg">
+                                        <nuxt-link to="/p/123">
+                                            <i class="fa fa-comment"></i>
+                                            100
                                         </nuxt-link>
-                                        <div class="info">
-                                            <nuxt-link class="nickname" to="/u/123">测试用户</nuxt-link>
-                                            <span>关注了作者 · 05.2 17:15</span>
-                                        </div>
-                                    </div>
-                                    <div class="follow-detail">
-                                        <div class="info">
-                                            <nuxt-link class="avatar" to="/u/234">
-                                                <img src="~/assets/img/follower.jpg">
-                                            </nuxt-link>
-                                            <a class="btn btn-default following">
-                                                <i class="fa fa-check"></i>
-                                                <span>已关注</span>
-                                            </a>
-                                            <nuxt-link class="title" to="/u/234">
-                                                万里流水
-                                            </nuxt-link>
-                                            <p>写了 2437 字，被 22 人关注，获得了 117 个喜欢</p>
-                                        </div>
-                                        <div class="signature">
-                                            简介：
-张赞杰，笔名老牛，万里流水，广东省梅州市大埔县人，现在在广州东华职业学院就读物流管理，自小体弱多病，但是钟爱于写作，初中时学会写诗填词，至今已经作了大约有五百多首诗词。
-                                        </div>
+                                        <span>
+                                            <i class="fa fa-heart"></i>
+                                            20
+                                        </span>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                </div>
+                
             </div>
             <!-- 侧边栏 -->
             <div class="col-xs-7 col-xs-offset-1 aside">
@@ -376,7 +297,7 @@
     .person .aside .new-collection-btn i{
         padding-right: 2px;
     }
-    .trigger-menu{
+     .trigger-menu{
         margin-bottom: 20px;
         border-bottom: 1px solid #f0f0f0;
         list-style: none;
@@ -397,91 +318,4 @@
         color: #969696;
         line-height: 25px;
     }
-    .trigger-menu a i{
-        margin-right: 5px;
-        font-size: 17px;
-    }
-    .note-list li{
-        position: relative;
-        width: 100%;
-        margin: 0 0 17px;
-        padding: 0 2px 17px 0;
-        border-bottom: 1px solid #f0f0f0;
-        word-wrap: break-word;
-    }
-    .note-list .author{
-        margin-bottom: 14px;
-        font-size: 13px;
-    }
-    .note-list .author .avatar{
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 5px 0 0;
-        color: #333;
-    }
-    .note-list .author .info{
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .note-list .author .info .nickname{
-        vertical-align: middle;
-    }
-    .note-list .author .info span{
-        display: inline-block;
-        padding-left: 3px;
-        color: #969696;
-        vertical-align: middle;
-    }
-    .note-list .follow-detail{
-        padding: 20px;
-        background-color: hsla(0,0%,71%,.1);
-        border: 1px solid #e1e1e1;
-        border-radius: 4px;
-        font-size: 12px;
-    }
-    .note-list .follow-detail .avatar{
-        float: left;
-        margin-right: 10px;
-        width: 48px;
-        height: 48px;
-    }
-    .note-list .follow-detail .btn{
-        float: right;
-        margin-top: 4px;
-        padding: 8px 0;
-        width: 100px;
-        border: 1px solid hsla(0,0%,59%,.6);
-        background: none;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: normal;
-        border-radius: 40px;
-        color: #8c8c8c;
-        text-align: center;
-        vertical-align: middle;
-        white-space: nowrap;
-    }
-     .note-list .follow-detail .btn span{
-        margin-left: 2px;
-        display: inline-block;
-     }
-     .note-list .follow-detail .info .title{
-        margin: 0;
-        font-size: 17px;
-        font-weight: 400;
-        line-height: 1.5;
-     }
-     .note-list .follow-detail .info p{
-        color: #969696;
-     }
-     .note-list .follow-detail .signature{
-        margin-top: 20px;
-        padding-top: 20px;
-        border-top: 1px solid #e1e1e1;
-        color: #969696;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-     }
 </style>
-
